@@ -12,3 +12,16 @@
   align-items: center;
 }
 
+.content {
+  flex: 1; /* Allow content to grow and take available space */
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.pattern-hills {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Stretch the image horizontally */
+  z-index: 2; /* Place overlay image above the content and background */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  background-image: url('./img/pattern-hills.svg'); /* Specify the path to your image */
+}
