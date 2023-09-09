@@ -1,27 +1,47 @@
 .App {
   text-align: center;
-  background-color: rgb(32, 2, 32);
-  background-image: url('./img/bg-stars.svg'); /* Specify the path to your image */
-  background-size: cover; /* This ensures the image covers the entire container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the image */
+  background-color: rgb(26, 2, 26);
+  background-image: url('./img/bg-stars.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: flex-end; /* Align items to the bottom */
   align-items: center;
-}
-
-.content {
-  flex: 1; /* Allow content to grow and take available space */
-  z-index: 1; /* Ensure content is above the overlay */
+  color: white;
+  position: relative; /* To make the overlay position relative to this container */
 }
 
 .pattern-hills {
-  position: absolute;
+  position: fixed; /* Stick to the bottom */
   bottom: 0;
-  width: 100%; /* Stretch the image horizontally */
-  z-index: 2; /* Place overlay image above the content and background */
-  object-fit: cover; /* Ensure the image covers the entire container */
-  background-image: url('./img/pattern-hills.svg'); /* Specify the path to your image */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 1; /* Place it behind the overlay */
+  object-fit: cover;
+  background-image: url('./img/pattern-hills.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon-container {
+  position: absolute; /* Overlay on top of PatternHills */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Place overlay above PatternHills */
+}
+
+.icon-container img {
+  margin: 1%;
+  padding-bottom: 3%;
+  height: 35px;
 }
