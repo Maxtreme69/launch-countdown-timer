@@ -10,6 +10,11 @@ function App() {
       <div className="pattern-hills">
         <img src={PatternHills} alt="Pattern Hills" />
       </div>
+
+      <div className="launch-heading">
+        <h1>WE'RE LAUNCHING SOON</h1>
+      </div>
+      
       <div className="icon-container">
         <img src={FaceBookIcon} alt="Facebook Icon" />
         <img src={PinterestIcon} alt="Pinterest Icon" />

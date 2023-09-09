@@ -45,3 +45,16 @@
   padding-bottom: 3%;
   height: 35px;
 }
+
+.launch-heading {
+  position: absolute;
+  top: 20%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center using translation */
+  z-index: 2; /* Place it above the PatternHills */
+  letter-spacing: 4px; /* Add letter spacing to the font */
+}
+
+.launch-heading h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+}
