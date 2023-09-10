@@ -9,7 +9,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column; /* Stack child elements vertically */
-  justify-content: flex-end; /* Align items to the bottom */
+  justify-content: center; /* Center items both horizontally and vertically */
   align-items: center;
   color: white;
   position: relative; /* To make the overlay position relative to this container */
@@ -57,4 +57,29 @@
 
 .launch-heading h1 {
   font-size: 24px; /* Adjust the font size as needed */
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.countdown-item {
+  text-align: center;
+  margin: 0 15px;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #fff;
+}
+
+.countdown-calender {
+  width: 100px;
+  height: 150px;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 
 }
